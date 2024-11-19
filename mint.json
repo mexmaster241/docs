@@ -5,7 +5,7 @@
     "dark": "/logo/2.svg",
     "light": "/logo/1.svg"
   },
-  "favicon": "/logo/1.svg",
+  "favicon": "/logo/1.png",
   "colors": {
     "primary": "#0086c8",
     "light": "#0086c8",
@@ -18,7 +18,7 @@
   "topbarLinks": [
     {
       "name": "Soporte",
-      "url": "https://dokoai.slack.com/archives/C080Y0J8EPR"
+      "url": "https://wa.me/+524732862903"
     }
   ],
   "topbarCtaButton": {
@@ -30,12 +30,7 @@
     {
       "name": "Documentación",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://docs.doko-ai.com/introduction"
     }
   ],
   "navigation": [
@@ -52,7 +47,6 @@
       "pages": [
         "chatbot/conversations",
         "chatbot/share",
-        "chatbot/images",
         "chatbot/settings"
       ]
     },

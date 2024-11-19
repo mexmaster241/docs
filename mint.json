@@ -5,25 +5,25 @@
     "dark": "/logo/2.svg",
     "light": "/logo/1.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/1.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#0086c8",
+    "light": "#0086c8",
+    "dark": "#0086c8",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#0086c8",
+      "to": "#0086c8"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Soporte",
       "url": "https://dokoai.slack.com/archives/C080Y0J8EPR"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://doko-ai.com/es/login"
   },
   
   "anchors": [
@@ -40,7 +40,7 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Empieza",
       "pages": [
         "introduction",
         "quickstart",
@@ -48,34 +48,25 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Chatbot",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "chatbot/conversations",
+        "chatbot/share",
+        "chatbot/images",
+        "chatbot/settings"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Integraciones",
       "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+       "integrations/whatsapp",
+       "integrations/shopify"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "x": "https://x.com/getdoko",
+    "linkedin": "https://linkedin.com/company/doko-ai",
+    "slack": "https://dokoai.slack.com/archives/C080Y0J8EPR"
   }
 }

@@ -54,7 +54,8 @@
       "group": "Integraciones",
       "pages": [
        "integrations/whatsapp",
-       "integrations/shopify"
+       "integrations/shopify",
+       "integrations/hubspot"
       ]
     }
   ],

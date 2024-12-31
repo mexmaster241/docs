@@ -2,17 +2,17 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Doko",
   "logo": {
-    "dark": "/logo/2.svg",
-    "light": "/logo/1.svg"
+    "dark": "/logo/icono-nuevo.png",
+    "light": "/logo/icono-nuevo-1.png"
   },
-  "favicon": "/logo/1.png",
+  "favicon": "/logo/icono-nuevo.png",
   "colors": {
-    "primary": "#0086c8",
-    "light": "#0086c8",
-    "dark": "#0086c8",
+    "primary": "#fcde33",
+    "light": "#fcde33",
+    "dark": "#fcde33",
     "anchors": {
-      "from": "#0086c8",
-      "to": "#0086c8"
+      "from": "#fcde33",
+      "to": "#fcde33"
     }
   },
   "topbarLinks": [
@@ -55,7 +55,8 @@
       "pages": [
        "integrations/whatsapp",
        "integrations/shopify",
-       "integrations/hubspot"
+       "integrations/hubspot",
+       "integrations/google-calendar"
       ]
     }
   ],

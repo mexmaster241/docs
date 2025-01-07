@@ -7,12 +7,15 @@
   },
   "favicon": "/logo/icono-nuevo.png",
   "colors": {
-    "primary": "#fcde33",
+    "primary": "#000000",
     "light": "#fcde33",
-    "dark": "#fcde33",
+    "dark": "#000000",
     "anchors": {
       "from": "#fcde33",
       "to": "#fcde33"
+    },
+    "background": {
+      "light":"#f4f0ed"
     }
   },
   "topbarLinks": [

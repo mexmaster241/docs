@@ -59,7 +59,8 @@
        "integrations/whatsapp",
        "integrations/shopify",
        "integrations/hubspot",
-       "integrations/google-calendar"
+       "integrations/google-calendar",
+       "integrations/zendesk"
       ]
     }
   ],

@@ -68,5 +68,17 @@
     "x": "https://x.com/getdoko",
     "linkedin": "https://linkedin.com/company/doko-ai",
     "slack": "https://dokoai.slack.com/archives/C080Y0J8EPR"
+  },
+  "versions": [
+  {
+    "name": "English",
+    "locale": "en"
+  },
+  {
+    "name": "Español",
+    "locale": "es",
+    "default": true
   }
+]
 }
+

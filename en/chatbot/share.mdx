@@ -1,0 +1,49 @@
+---
+title: 'Share'
+description: 'Deploy your chatbot in production across different platforms'
+icon: 'share-nodes'
+---
+
+## Website Integration
+
+### Add your chatbot to your website
+Add your chatbot directly to your website by copying and pasting the following code snippet into your HTML. The chatbot will appear as a floating button in the bottom right corner of your website.
+
+```
+<script>
+    function loadChatScript() {
+        var chatID = '7ee6c0e0-c5bb-4b3d-ac82-557ef09b9340';
+        var script = document.createElement('script');
+        script.src = "https://doko-ai.com/api/chatbot/embed?chatbotId=" + chatID;
+        document.body.appendChild(script);
+    }
+    loadChatScript();
+</script>
+```
+
+## Web Interface
+Share a direct link to your chatbot's web interface. Users can access the complete chat experience through their web browser without any installation required.
+This link is automatically generated when you create a chatbot on the platform.
+```
+https://doko-ai.com/chat/chatID
+```
+
+## Get your chatbot ID
+<Steps>
+    <Step title="Access the share page">
+       <Frame>
+  <img src="/images/interfaz-2.png" alt="Chatbot ID" />
+</Frame>
+    </Step>
+    <Step title="Copy your chatbot ID from the top right corner">
+        <Frame>
+            <img src="/images/interfaz-3.png" alt="Chatbot ID" />
+        </Frame>
+    </Step>
+</Steps>
+
+## WhatsApp Integration
+<Card title="WhatsApp Tutorial" icon="whatsapp" href="/integrations/whatsapp">
+  Access the tutorial to integrate your chatbot with WhatsApp.
+</Card>
+

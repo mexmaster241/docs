@@ -8,6 +8,7 @@
     "dark": "#000000"
   },
   "favicon": "/logo/icono-nuevo.png",
+  
   "navigation": {
     "languages": [
       {
@@ -20,27 +21,27 @@
               {
                 "group": "Empieza",
                 "pages": [
-                  "introduction",
-                  "quickstart",
-                  "development"
+                  "en/introduction",
+                  "en/quickstart",
+                  "en/development"
                 ]
               },
               {
                 "group": "Chatbot",
                 "pages": [
-                  "chatbot/conversations",
-                  "chatbot/share",
-                  "chatbot/settings"
+                  "en/chatbot/conversations",
+                  "en/chatbot/share",
+                  "en/chatbot/settings"
                 ]
               },
               {
                 "group": "Integraciones",
                 "pages": [
-                  "integrations/whatsapp",
-                  "integrations/shopify",
-                  "integrations/hubspot",
-                  "integrations/google-calendar",
-                  "integrations/zendesk"
+                  "en/integrations/whatsapp",
+                  "en/integrations/shopify",
+                  "en/integrations/hubspot",
+                  "en/integrations/google-calendar",
+                  "en/integrations/zendesk"
                 ]
               }
             ]
@@ -58,27 +59,27 @@
               {
                 "group": "Empieza",
                 "pages": [
-                  "introduction",
-                  "quickstart",
-                  "development"
+                  "es/introduction",
+                  "es/quickstart",
+                  "es/development"
                 ]
               },
               {
                 "group": "Chatbot",
                 "pages": [
-                  "chatbot/conversations",
-                  "chatbot/share",
-                  "chatbot/settings"
+                  "es/chatbot/conversations",
+                  "es/chatbot/share",
+                  "es/chatbot/settings"
                 ]
               },
               {
                 "group": "Integraciones",
                 "pages": [
-                  "integrations/whatsapp",
-                  "integrations/shopify",
-                  "integrations/hubspot",
-                  "integrations/google-calendar",
-                  "integrations/zendesk"
+                  "es/integrations/whatsapp",
+                  "es/integrations/shopify",
+                  "es/integrations/hubspot",
+                  "es/integrations/google-calendar",
+                  "es/integrations/zendesk"
                 ]
               }
             ]
@@ -106,6 +107,7 @@
     }
   },
   "navbar": {
+
     "links": [
       {
         "label": "Soporte",
@@ -124,5 +126,8 @@
       "linkedin": "https://linkedin.com/company/doko-ai",
       "slack": "https://dokoai.slack.com/archives/C080Y0J8EPR"
     }
+  },
+  "seo": {
+    "indexing": "all"
   }
 }

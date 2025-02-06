@@ -1,0 +1,128 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Doko",
+  "colors": {
+    "primary": "#000000",
+    "light": "#fcde33",
+    "dark": "#000000"
+  },
+  "favicon": "/logo/icono-nuevo.png",
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "anchors": [
+          {
+            "anchor": "Documentation",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Empieza",
+                "pages": [
+                  "introduction",
+                  "quickstart",
+                  "development"
+                ]
+              },
+              {
+                "group": "Chatbot",
+                "pages": [
+                  "chatbot/conversations",
+                  "chatbot/share",
+                  "chatbot/settings"
+                ]
+              },
+              {
+                "group": "Integraciones",
+                "pages": [
+                  "integrations/whatsapp",
+                  "integrations/shopify",
+                  "integrations/hubspot",
+                  "integrations/google-calendar",
+                  "integrations/zendesk"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "es",
+        "default": true,
+        "anchors": [
+          {
+            "anchor": "Documentation",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Empieza",
+                "pages": [
+                  "introduction",
+                  "quickstart",
+                  "development"
+                ]
+              },
+              {
+                "group": "Chatbot",
+                "pages": [
+                  "chatbot/conversations",
+                  "chatbot/share",
+                  "chatbot/settings"
+                ]
+              },
+              {
+                "group": "Integraciones",
+                "pages": [
+                  "integrations/whatsapp",
+                  "integrations/shopify",
+                  "integrations/hubspot",
+                  "integrations/google-calendar",
+                  "integrations/zendesk"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentación",
+          "href": "https://docs.doko-ai.com/introduction",
+          "icon": "book-open-cover"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/icono-nuevo-1.png",
+    "dark": "/logo/icono-nuevo.png"
+  },
+  "background": {
+    "color": {
+      "light": "#f4f0ed"
+    }
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Soporte",
+        "href": "https://wa.me/+524732862903"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://doko-ai.com/es/login"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/getdoko",
+      "linkedin": "https://linkedin.com/company/doko-ai",
+      "slack": "https://dokoai.slack.com/archives/C080Y0J8EPR"
+    }
+  }
+}

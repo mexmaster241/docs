@@ -41,7 +41,8 @@
                   "en/integrations/shopify",
                   "en/integrations/hubspot",
                   "en/integrations/google-calendar",
-                  "en/integrations/zendesk"
+                  "en/integrations/zendesk",
+                  "en/integrations/facebook"
                 ]
               }
             ]
@@ -79,7 +80,8 @@
                   "es/integrations/shopify",
                   "es/integrations/hubspot",
                   "es/integrations/google-calendar",
-                  "es/integrations/zendesk"
+                  "es/integrations/zendesk",
+                  "es/integrations/facebook"
                 ]
               }
             ]

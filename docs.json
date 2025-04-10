@@ -42,7 +42,8 @@
                   "en/integrations/hubspot",
                   "en/integrations/google-calendar",
                   "en/integrations/zendesk",
-                  "en/integrations/facebook"
+                  "en/integrations/messenger",
+                  "en/integrations/instagram"
                 ]
               }
             ]
@@ -81,7 +82,8 @@
                   "es/integrations/hubspot",
                   "es/integrations/google-calendar",
                   "es/integrations/zendesk",
-                  "es/integrations/facebook"
+                  "es/integrations/messenger",
+                  "es/integrations/instagram"
                 ]
               }
             ]

@@ -31,7 +31,8 @@
                 "pages": [
                   "en/chatbot/conversations",
                   "en/chatbot/share",
-                  "en/chatbot/settings"
+                  "en/chatbot/settings",
+                  "en/chatbot/admin-settings"
                 ]
               },
               {
@@ -71,7 +72,8 @@
                 "pages": [
                   "es/chatbot/conversations",
                   "es/chatbot/share",
-                  "es/chatbot/settings"
+                  "es/chatbot/settings",
+                  "es/chatbot/admin-settings"
                 ]
               },
               {

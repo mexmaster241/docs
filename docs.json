@@ -19,7 +19,7 @@
             "icon": "book-open",
             "groups": [
               {
-                "group": "Empieza",
+                "group": "Quickstart",
                 "pages": [
                   "en/introduction",
                   "en/quickstart",
@@ -36,7 +36,7 @@
                 ]
               },
               {
-                "group": "Integraciones",
+                "group": "Integrations",
                 "pages": [
                   "en/integrations/whatsapp",
                   "en/integrations/shopify",
@@ -45,6 +45,12 @@
                   "en/integrations/zendesk",
                   "en/integrations/messenger",
                   "en/integrations/instagram"
+                ]
+              },
+              {
+                "group": "Affiliates",
+                "pages": [
+                  "en/affiliates/affiliates"
                 ]
               }
             ]
@@ -86,6 +92,12 @@
                   "es/integrations/zendesk",
                   "es/integrations/messenger",
                   "es/integrations/instagram"
+                ]
+              },
+              {
+                "group": "Afiliados",
+                "pages": [
+                  "es/afiliados/afiliados"
                 ]
               }
             ]

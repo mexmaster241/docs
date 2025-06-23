@@ -107,3 +107,89 @@ Con esta herramienta, puedes personalizar la información que quieres captar de 
 <Warning>Para que esta herramienta funcione debes añadir campos</Warning>
   </Step>  
 </Steps>
+
+## Herramienta personalizada (API) 
+
+Con esta herramienta puedes habilitar a tu chatbot para que use cualquier API
+<Frame>
+  <img src="/images/custom-tool-es.png" alt="custom-tool" />
+</Frame>
+
+### Configura tu herramienta
+
+<Steps>
+  <Step title="Crear nueva herramienta">
+   Haz clic en el botón "Crear herramienta" para comenzar a configurar tu herramienta personalizada.
+   <Frame>
+  <img src="/images/create-tool-es.png" alt="create-tool" />
+</Frame>
+  </Step>
+  <Step title="Configurar información básica">
+    Completa los campos principales de tu herramienta:
+    - **Nombre**: Dale un nombre descriptivo a tu herramienta
+    - **Método**: Selecciona el método HTTP (GET, POST, PUT, DELETE)
+    - **Descripción**: Explica qué hace esta herramienta para que el chatbot sepa cuándo usarla
+    - **URL**: Ingresa la URL del endpoint de tu API
+  </Step>
+  <Step title="Configurar body (para POST, PUT, DELETE)">
+    Si seleccionaste POST, PUT o DELETE, podrás configurar los campos del cuerpo de la solicitud:
+    
+    Para cada campo del body puedes configurar:
+    - **Nombre**: El nombre del campo (ej: userData, user_data, items)
+    - **Tipo**: El tipo de dato (Cadena, Número, Booleano, etc.)
+    - **Es un array**: Marca esta opción si el campo debe ser un arreglo
+    - **Descripción**: Explica qué información contiene este campo
+    
+    Ejemplos de configuración:
+    - Campo simple: `nombre` (Cadena) - Para enviar un nombre de usuario
+    - Campo array: `productos` (Cadena, Es un array ✓) - Para enviar una lista de productos
+    - Campo numérico: `cantidad` (Número) - Para enviar cantidades
+    - Campo booleano: `activo` (Booleano) - Para indicar si un usuario está activo
+    - Campo objeto: `direccion` (Objeto) - Para enviar la dirección completa de un usuario
+    
+    <Note>El body solo es necesario para métodos POST, PUT y DELETE. GET no utiliza body.</Note>
+  </Step>
+  <Step title="Agregar parámetros (opcional)">
+    Si tu API requiere parámetros de consulta, haz clic en "Agregar parámetro" y configura:
+    - Nombre del parámetro
+    - Tipo de dato
+    - Si es requerido u opcional
+    <Note>Los parámetros se envían como query strings en la URL</Note>
+  </Step>
+  <Step title="Configurar encabezados (opcional)">
+    Para APIs que requieren autenticación o encabezados específicos, haz clic en "Agregar encabezado":
+    - Nombre del encabezado (ej: Authorization, Content-Type)
+    - Valor del encabezado (ej: Bearer token, application/json)
+    <Warning>Mantén seguros tus tokens y claves API. No compartas esta información.</Warning>
+  </Step>
+  <Step title="Guardar herramienta">
+    Una vez completada la configuración, haz clic en "Crear herramienta" para guardar y activar tu herramienta personalizada.
+  </Step>
+</Steps>
+
+### Ejemplos de uso
+
+<Accordion title="API de clima">
+  **Nombre**: Consultar clima  
+  **Método**: GET  
+  **URL**: `https://api.openweathermap.org/data/2.5/weather`  
+  **Parámetros**: 
+  - `q` (ciudad)
+  - `appid` (tu API key)
+  - `units` (metric)
+</Accordion>
+
+<Accordion title="API de inventario">
+  **Nombre**: Consultar stock  
+  **Método**: GET  
+  **URL**: `https://tu-api.com/inventory/check`  
+  **Encabezados**:
+  - `Authorization`: `Bearer tu-token`
+  - `Content-Type`: `application/json`
+</Accordion>
+
+<Tip>
+Tu chatbot automáticamente sabrá cuándo usar esta herramienta basándose en la descripción que proporciones. Sé específico sobre cuándo y cómo debe usarse.
+</Tip>
+
+

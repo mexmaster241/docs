@@ -83,7 +83,7 @@ Let your chatbot take orders for you, quantity, customer data, type of payment, 
 
 ## Custom Form
 
-With this tool, you can customize the information you want to capture from your client.
+With this tool, you can customize the information you want to get from your client.
 <Frame>
   <img src="/images/formulario.png" alt="Live Chat" />
 </Frame>
@@ -105,3 +105,87 @@ With this tool, you can customize the information you want to capture from your 
 <Warning>To make this tool work, you must add fields</Warning>
   </Step>  
 </Steps>
+
+
+## Custom Tool (API) 
+
+With this tool you can enable your bot to use any API endpoint as you want. 
+<Frame>
+  <img src="/images/custom-tool.png" alt="custom-tool" />
+</Frame>
+
+
+<Steps>
+  <Step title="Create New Tool">
+   Click the "Create Tool" button to start configuring your custom tool.
+   <Frame>
+  <img src="/images/create-tool.png" alt="create-tool" />
+</Frame>
+  </Step>
+  <Step title="Configure Basic Information">
+    Complete the main fields of your tool:
+    - **Name**: Give your tool a descriptive name
+    - **Method**: Select the HTTP method (GET, POST, PUT, DELETE)
+    - **Description**: Explain what this tool does so the chatbot knows when to use it
+    - **URL**: Enter the URL of your API endpoint
+  </Step>
+  <Step title="Configure Body (for POST, PUT, DELETE)">
+    If you selected POST, PUT, or DELETE, you can configure the fields of the request body:
+    
+    For each body field, you can configure:
+    - **Name**: The name of the field (e.g., userData, user_data, items)
+    - **Type**: The data type (String, Number, Boolean, etc.)
+    - **Is an Array**: Check this option if the field should be an array
+    - **Description**: Explain what information this field contains
+    
+    Configuration examples:
+    - Simple field: `name` (String) - To send a username
+    - Array field: `products` (String, Is an array ✓) - To send a list of products
+    - Numeric field: `quantity` (Number) - To send quantities
+    - Boolean field: `active` (Boolean) - To indicate if a user is active
+    - Object field: `address` (Object) - To send a user's full address
+    
+    <Note>The body is only necessary for POST, PUT, and DELETE methods. GET does not use a body.</Note>
+  </Step>
+  <Step title="Add Parameters (Optional)">
+    If your API requires query parameters, click "Add Parameter" and configure:
+    - Parameter name
+    - Data type
+    - Whether it is required or optional
+    <Note>Parameters are sent as query strings in the URL</Note>
+  </Step>
+  <Step title="Configure Headers (Optional)">
+    For APIs that require authentication or specific headers, click "Add Header":
+    - Header name (e.g., Authorization, Content-Type)
+    - Header value (e.g., Bearer token, application/json)
+    <Warning>Keep your tokens and API keys secure. Do not share this information.</Warning>
+  </Step>
+  <Step title="Save Tool">
+    Once the configuration is complete, click "Create Tool" to save and activate your custom tool.
+  </Step>
+</Steps>
+
+### Usage Examples
+
+<Accordion title="Weather API">
+  **Name**: Weather Query  
+  **Method**: GET  
+  **URL**: `https://api.openweathermap.org/data/2.5/weather`  
+  **Parameters**: 
+  - `q` (city)
+  - `appid` (your API key)
+  - `units` (metric)
+</Accordion>
+
+<Accordion title="Inventory API">
+  **Name**: Stock Query  
+  **Method**: GET  
+  **URL**: `https://your-api.com/inventory/check`  
+  **Headers**:
+  - `Authorization`: `Bearer your-token`
+  - `Content-Type`: `application/json`
+</Accordion>
+
+<Tip>
+Your chatbot will automatically know when to use this tool based on the description you provide. Be specific about when and how it should be used.
+</Tip>
